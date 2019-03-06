@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.d9a8c041b6f28428ac5dc49a945b31ca.css"],"names":[],"mappings":"AACA,OACE,kBAAoB,CACrB,AAED,MACI,WAA0B,AAC1B,wBAAmC,CACtC","file":"app.d9a8c041b6f28428ac5dc49a945b31ca.css","sourcesContent":["\n.email {\r\n  padding-right: 10px;\n}\r\n\n.chip {\r\n    color: rgb(255, 255, 255);\r\n    background-color: rgb(32, 177, 75);\n}\r\n"]}
