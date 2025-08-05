@@ -1,1 +1,180 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet><link href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous><title>Employee Manager</title><link href=/static/css/app.27628ec5bef7244d9c994bd28fc26f96.css rel=stylesheet></head><body><div id=app></div><script src=https://code.jquery.com/jquery-3.3.1.js integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.c90d8b12c338df0e04e1.js></script><script type=text/javascript src=/static/js/app.b25a64e80c3ac664c4a8.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelton Adey | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb; /* gray-200 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            
+            <!-- Header Section -->
+            <header class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+                <div>
+                    <h1 class="text-5xl font-bold text-gray-900">Kelton Adey</h1>
+                    <p class="text-xl text-gray-600 mt-2">Software Developer</p>
+                </div>
+                <div class="mt-6 md:mt-0 text-right text-sm">
+                    <a href="mailto:kadey001@ucr.edu" class="flex items-center justify-end text-gray-600 hover:text-blue-600 transition duration-300 mb-2">
+                        kadey001@ucr.edu <i class="fas fa-envelope ml-3 text-lg"></i>
+                    </a>
+                    <a href="https://github.com/kadey001" target="_blank" rel="noopener noreferrer" class="flex items-center justify-end text-gray-600 hover:text-blue-600 transition duration-300 mb-2">
+                        github.com/kadey001 <i class="fab fa-github ml-3 text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kelton-adey" target="_blank" rel="noopener noreferrer" class="flex items-center justify-end text-gray-600 hover:text-blue-600 transition duration-300">
+                        linkedin.com/in/kelton-adey <i class="fab fa-linkedin ml-3 text-lg"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+                <!-- Left Column: Experience & Projects -->
+                <div class="lg:col-span-2">
+                    
+                    <!-- Experience Section -->
+                    <section id="experience">
+                        <h2 class="text-3xl font-bold section-title">Experience</h2>
+                        
+                        <div class="mb-8">
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="text-xl font-semibold text-gray-900">Lead Developer</h3>
+                                <p class="text-sm text-gray-500">Jul 2021 - Present</p>
+                            </div>
+                            <p class="text-md text-blue-600 font-medium">Prytaneum @ UCR</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-700 space-y-2">
+                                <li>Led a team of 5 undergraduates to design, develop, test, and launch an online townhall application.</li>
+                                <li>Assigned tasks, reviewed pull requests, and worked with stakeholders to deliver a functional product.</li>
+                                <li>Coordinated real-world demos with external clients, gathered feedback, and iterated on the product.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="text-xl font-semibold text-gray-900">Research Assistant</h3>
+                                <p class="text-sm text-gray-500">Jan 2020 - Jul 2021</p>
+                            </div>
+                            <p class="text-md text-blue-600 font-medium">Prytaneum @ UCR</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-700 space-y-2">
+                                <li>Designed, developed, and tested the platform's notification system (front-end and back-end).</li>
+                                <li>Implemented a user rating system, which involved modifying the MongoDB schema and extending the REST API.</li>
+                                <li>Researched and implemented a DevOps testing and linting pipeline using GitHub Actions.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section id="projects" class="mt-12">
+                        <h2 class="text-3xl font-bold section-title">Projects</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-gray-900">Notflix (Netflix Clone)</h3>
+                                <p class="text-sm text-gray-600 mt-1">Lead Developer</p>
+                                <p class="mt-2 text-gray-700">Developed a robust back-end API for streaming video files from HDFS. Deployed on Azure with a custom CentOS VM.</p>
+                            </div>
+                             <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-gray-900">Rent Sharing Web App</h3>
+                                <p class="text-sm text-gray-600 mt-1">Full Stack Developer & Scrum Master</p>
+                                <p class="mt-2 text-gray-700">Led project planning using Agile practices. Implemented with Firebase/Firestore and deployed via Firebase Hosting.</p>
+                            </div>
+                             <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-gray-900">Stacker (Arcade Game)</h3>
+                                <p class="text-sm text-gray-600 mt-1">Developer</p>
+                                <p class="mt-2 text-gray-700">Built an arcade game using an ATMEGA 1284 microcontroller, C, and various electronic components.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Skills & Education -->
+                <div class="lg:col-span-1">
+                    
+                    <!-- Skills Section -->
+                    <section id="skills">
+                        <h2 class="text-3xl font-bold section-title">Skills</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="font-semibold text-gray-700 mb-2">Programming Languages</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">TypeScript</span>
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">C++</span>
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">HTML/CSS</span>
+                                </div>
+                            </div>
+                             <div>
+                                <h3 class="font-semibold text-gray-700 mb-2">Frameworks & Libraries</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">React (Next.js)</span>
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Vue</span>
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Express</span>
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Flutter</span>
+                                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Flask</span>
+                                </div>
+                            </div>
+                             <div>
+                                <h3 class="font-semibold text-gray-700 mb-2">Databases & DevOps</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">GraphQL</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Kubernetes</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">GitHub Actions</span>
+                                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Azure</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education Section -->
+                    <section id="education" class="mt-12">
+                        <h2 class="text-3xl font-bold section-title">Education</h2>
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-900">University of California, Riverside</h3>
+                            <p class="text-md text-gray-600">B.S. in Computer Science</p>
+                            <p class="text-sm text-gray-500">Sep 2015 - Dec 2020</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Keio University</h3>
+                            <p class="text-md text-gray-600">Education Abroad Program</p>
+                            <p class="text-sm text-gray-500">Sep 2016 - Aug 2017</p>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="text-center mt-16 text-sm text-gray-500">
+                <p>Hosted on GitHub Pages.</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
